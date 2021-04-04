@@ -6,6 +6,7 @@ const list3 = document.querySelector('.list3');
 const list4 = document.querySelector('.list4');
 const logo = document.querySelector('.logo');
 
+
 btn.addEventListener('click', () => {
   nav.classList.toggle('open-menu');
   if (btn.innerHTML === 'Menu') {
@@ -44,7 +45,7 @@ list3.addEventListener('click', () => {
 
 list4.addEventListener('click', () => {
   nav.classList.toggle('open-menu');
-  if (btn.inxnerHTML === 'Menu') {
+  if (btn.innerHTML === 'Menu') {
     btn.innerHTML = 'Close';
   } else {
     btn.innerHTML = 'Menu';
