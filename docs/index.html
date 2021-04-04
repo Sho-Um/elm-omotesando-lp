@@ -9,6 +9,7 @@
 
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link href="css/style.css" rel="stylesheet">
     </head>
 
@@ -28,25 +29,25 @@
             </div>
         </header>
 
-        <section id="hero" data-aos>
             <div class="wrapper">
-                <h1 class="elmclinic">エルムクリニック<br>表参道院<br>NEW OPEN</h1>
-                <p class="hero-date">2021. 7. 21 グランドオープン</p>
+                <h1 class="elmclinic" data-aos="flip-right" data-aos-duration="3000" data-aos-offset="0">エルムクリニック<br>表参道院<br>NEW OPEN</h1>
+                <p class="hero-date" data-aos="flip-right" data-aos-delay="500" data-aos-duration="3000" data-aos-offset="0">2021. 7. 21 グランドオープン</p>
                 <!-- <p>
                     笑顔と技術を追求する美容皮膚科<br>
                     2021年７月<br>
                     表参道に新たに開院
                 </p> -->
-                <section id="reservation">
+                <section id="reservation" data-aos="flip-right" data-aos-delay="1500" data-aos-duration="3000" data-aos-offset="0">
                     <h2>今すぐ<br>LINEで予約</h2>
-                    <div class="line-btn"><a href="https://lin.ee/38IAkcs"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="50" border="0"></a></div>
+                    <div class="line-btn"><a href="https://lin.ee/38IAkcs"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="50" border="0" ></a></div>
                 </section>
             </div>
         </section>
 
         <section id="about" class="wrapper">
+        <section id="about" class="wrapper" >
             <h2>About</h2>
-            <p>
+            <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
                 <span class="catch_copy blue">「切らずに、きれいに」</span><br>
                 &emsp;エルムクリニックは、全国７院を展開する美容皮膚科です。
                 おかげさまで、今年をもって10周年となります。
@@ -54,11 +55,11 @@
                 その初心を忘れず、ついに８院目の表参道院をオープンします！
                 
             </p>
-            <img src="images/elm_big_logo.png" alt="">
+            <img src="images/elm_big_logo.png" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
         </section>
 
         <section id="news">
-            <h2>Campaign</h2>
+            <h2 data-aos="flip-right" data-aos-delay="50" data-aos-duration="2000">Campaign</h2>
             <!-- <div class="wrapper">
                 <table class="news-table">
                     <tr>
@@ -82,16 +83,16 @@
         </section>
 
         <section id="speakers" class="wrapper">
-            <h2>Doctors</h2>
+            <h2 data-aos="flip-right" data-aos-delay="100" data-aos-duration="3000">Doctors</h2>
             <div class="speakers-list">
-                <div class="speakers-text">
+                <div class="speakers-text" >
                     <h3><ruby><rb>大久保</rb><rt>おおくぼ</rt></ruby>&nbsp;<ruby><rb>里紗</rb><rt>りさ</rt></ruby>&nbsp;院長</h3> 
                     <p>
                         広島大学医学部医学科卒業後、<br>広島大学病院及び関連病院に勤務。
                         2021年７月、表参道にエルムクリニックを開院。
                     </p>
                 </div>
-                <img src="images/doctor1.png" alt="">
+                <img src="images/doctor1.png" alt="" data-aos="slide-right" data-aos-delay="200" data-aos-duration="2000">
             </div>
             <!-- <div class="speakers-list">
                 <div class="speakers-text">
@@ -106,8 +107,8 @@
             </div> -->
         </section>
 
-        <section id="ticket">
-            <h2>LINEで予約</h2>
+        <section id="ticket" >
+            <h2 data-aos="flip-right" data-aos-delay="100" data-aos-duration="3000">LINEで予約</h2>
             
             <!-- <form class="ticket-form" action="#">
                 <label>Name</label>
@@ -126,6 +127,7 @@
         </section>
 
     <!-- JavaScript -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="js/script.js"></script>
 	</body>
 </html>

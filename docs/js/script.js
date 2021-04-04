@@ -9,3 +9,5 @@ btn.addEventListener('click', () => {
     btn.innerHTML = 'Menu';
   }
 });
+
+AOS.init();
