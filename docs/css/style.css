@@ -73,13 +73,13 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-    animation: delay-opacity-change 8s ease 0s normal;
+    animation: delay-opacity-change 10s ease 0s normal;
 }
 
 @keyframes delay-opacity-change {
     0% { opacity: 0;}
-    20% { opacity: 0; }
-    50% { opacity: 1;}
+    55% { opacity: 0; }
+    70% { opacity: 1;}
 }
 
 header .wrapper {
@@ -153,7 +153,8 @@ HERO
 
 @keyframes opacity-change {
     0% { opacity: 0;}
-    40% { opacity: 1;}
+    10% { opacity: 0; }
+    60% { opacity: 1;}
 }
 #hero h1 {
     font-size: 2.5rem;
