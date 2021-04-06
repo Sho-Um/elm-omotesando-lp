@@ -61,6 +61,9 @@ h2,
     padding: 0 1rem;
 }
 
+
+
+
 /*
 HEADER
 ================================================ */
@@ -70,7 +73,15 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
+    animation: delay-opacity-change 8s ease 0s normal;
 }
+
+@keyframes delay-opacity-change {
+    0% { opacity: 0;}
+    20% { opacity: 0; }
+    50% { opacity: 1;}
+}
+
 header .wrapper {
     display: flex;
     justify-content: space-between;
@@ -120,7 +131,7 @@ HERO
     background-position: center;
     background-size: cover;
     background-blend-mode: screen;
-    animation: bg-color 12s infinite;
+    animation: bg-color 12s infinite, opacity-change 12s;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -138,6 +149,11 @@ HERO
     75% { background-color: var(--light-green); }
     87.5% { background-color: var(--green); }
     100% { background-color: var(--light-blue); }
+}
+
+@keyframes opacity-change {
+    0% { opacity: 0;}
+    40% { opacity: 1;}
 }
 #hero h1 {
     font-size: 2.5rem;
