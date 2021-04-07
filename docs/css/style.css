@@ -59,8 +59,22 @@ h2,
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+    animation: opacity-change-word 12s;
+    opacity: 1;
+    color: rgb(180, 71, 180);
+    
 }
 
+.top-message {
+    background:rgba(0, 255, 136, 0.85);
+    border-radius:50px;
+}
+
+@keyframes opacity-change-word {
+    0% { opacity: 0;}
+    70% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 
 
@@ -125,13 +139,14 @@ HERO
 #hero {
     /* ↓ 省略形だとブラウザーによってうまく表示されない
     background: var(--light-blue) url('../images/hero.jpg') no-repeat center / cover; */
-    background-color: var(--light-blue);
-    background-image: url('../images/elm_big_logo.png');
+    /* background-color: var(--light-blue); */
+    background-image: url('../images/skincare.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: screen;
-    animation: bg-color 12s infinite, opacity-change 12s;
+    /* animation: bg-color 12s infinite, opacity-change 12s; */
+    animation: opacity-change 12s;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -139,7 +154,7 @@ HERO
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
-@keyframes bg-color {
+/* @keyframes bg-color {
     0% { background-color: var(--light-blue); }
     12.5% { background-color: var(--blue); }
     25% { background-color: var(--purple); }
@@ -149,13 +164,14 @@ HERO
     75% { background-color: var(--light-green); }
     87.5% { background-color: var(--green); }
     100% { background-color: var(--light-blue); }
-}
+} */
 
 @keyframes opacity-change {
     0% { opacity: 0;}
     40% { opacity: 0; }
     70% { opacity: 1; }
 }
+
 #hero h1 {
     font-size: 2.5rem;
     margin-top: 5.0rem;
@@ -175,9 +191,10 @@ ABOUT
 ================================================ */
 #about {
     padding: 4rem 1rem;
+    color:#db82a1;
 }
 #about h2 {
-  background: linear-gradient(var(--yellow), var(--orange));
+  background:#db82a1;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,7 +208,7 @@ ABOUT
 NEWS
 ================================================ */
 #news {
-    background-image: linear-gradient(var(--light-green), var(--green));
+    background-image: linear-gradient(var(--light-green), var(--orange));
     padding: 7rem 0;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
@@ -223,6 +240,7 @@ SPEAKERS
 ================================================ */
 #speakers {
     padding: 4rem 1rem;
+    color:#db82a1;
 }
 .speakers-list {
     display: flex;
@@ -234,7 +252,7 @@ SPEAKERS
     margin-left: 1rem;
 }
 #speakers h2 {
-  background: linear-gradient(var(--light-blue), var(--blue));
+  background: linear-gradient(var(--orange), var(--pink));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -403,6 +421,7 @@ header a {
 
 .line-btn {
     margin-bottom: 2rem;
+    padding: 1rem;
 }
 .main-nav li {
     text-align: center;
