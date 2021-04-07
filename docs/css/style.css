@@ -191,10 +191,10 @@ ABOUT
 ================================================ */
 #about {
     padding: 4rem 1rem;
-    color:#db82a1;
+    color:#f3b4cc;
 }
 #about h2 {
-  background:#db82a1;
+  background:#f3b4cc;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -240,7 +240,7 @@ SPEAKERS
 ================================================ */
 #speakers {
     padding: 4rem 1rem;
-    color:#db82a1;
+    color:#f3b4cc;
 }
 .speakers-list {
     display: flex;
